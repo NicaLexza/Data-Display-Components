@@ -15,9 +15,12 @@ import ListDemo from "./components/ListDemo";
 import AvatarBadgeDemo from "./components/AvatarBadgeDemo";
 import AccordionDemo from "./components/AccordionDemo";
 
+// App component: sets up the theme and page layout, then renders demo sections.
+// Box centers the page; Container holds the demo components and their labels.
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
+      {/* CssBaseline applies the theme background and basic global styles */}
       <CssBaseline />
       <Box
         sx={{
@@ -30,12 +33,14 @@ export default function App() {
           textAlign: "center",
         }}
       >
+        {/* Container constrains content width and stacks labeled demo components */}
         <Container maxWidth="md">
           <Typography variant="h4" gutterBottom>
             Data Display Components Demo
           </Typography>
-          <Divider sx={{mt: 3, my: 2 }} />
+          <Divider sx={{ mt: 3, my: 2 }} />
 
+          {/* Each label (Typography) names the demo below it */}
           <Typography
             variant="subtitle1"
             align="left"
@@ -49,7 +54,7 @@ export default function App() {
           <Typography
             variant="subtitle1"
             align="left"
-            sx={{fontWeight: 600, mb: 1 }}
+            sx={{ fontWeight: 600, mb: 1 }}
           >
             AVATARS
           </Typography>
@@ -69,7 +74,7 @@ export default function App() {
           <Typography
             variant="subtitle1"
             align="left"
-            sx={{fontWeight: 600, mb: 1 }}
+            sx={{ fontWeight: 600, mb: 1 }}
           >
             TABLE
           </Typography>

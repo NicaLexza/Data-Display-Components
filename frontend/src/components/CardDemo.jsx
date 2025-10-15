@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  CardActions,
-  Button,
-  Box
-} from "@mui/material";
+import {Card,CardContent,CardMedia, Typography, CardActions, Button, Box} from "@mui/material";
 
+// CardDemo: displays two sample cards side-by-side.
+// Each Card uses CardMedia for an image, CardContent for text, and CardActions for buttons.
 export default function CardDemo() {
   return (
     <Box
@@ -26,6 +20,7 @@ export default function CardDemo() {
           textAlign: "center",
         }}
       >
+        {/* CardMedia shows the image for the card */}
         <CardMedia
           component="img"
           height="330"
@@ -37,6 +32,7 @@ export default function CardDemo() {
           <Typography gutterBottom variant="h5">
             Kim Dahyun
           </Typography>
+          {/* Description text inside CardContent */}
           <Typography variant="body2" color="text.secondary">
             A talented rapper and vocalist of TWICE, known for her bright energy and stage charisma.
           </Typography>
@@ -48,7 +44,7 @@ export default function CardDemo() {
         </CardActions>
       </Card>
 
-      {/* Second Card (Duplicate) */}
+      {/* Second Card */}
       <Card
         sx={{
           background: (theme) => theme.palette.customGradient,
