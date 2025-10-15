@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-// Each Accordion uses AccordionSummary for the clickable header and AccordionDetails for the hidden content.
+//  Each Accordion uses AccordionSummary for the clickable header and AccordionDetails for the hidden content.
 export default function AccordionDemo() {
   return (
     <>
